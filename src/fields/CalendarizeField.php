@@ -162,7 +162,7 @@ class CalendarizeField extends Field implements PreviewableFieldInterface
     /**
      * @inheritdoc
      */
-    public function getTableAttributeHtml(mixed $value, ElementInterface $element): string
+    public function getPreviewHtml(mixed $value, ElementInterface $element): string
     {
         if (empty($value->startDate) && empty($value->endDate)) {
             return '-';
